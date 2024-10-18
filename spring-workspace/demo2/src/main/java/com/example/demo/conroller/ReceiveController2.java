@@ -12,8 +12,13 @@ public class ReceiveController2 {
         return "info-form";
     }
 
+    @RequestMapping("/receive-info")
+    public String index2(){
+        return "redirect:/receive2/receive-info2";
+    }
+
 @RequestMapping("/receive-info2")
 public String receiveInfo() {
-    return "redirect";
+    return "finished2";
     }
 }
