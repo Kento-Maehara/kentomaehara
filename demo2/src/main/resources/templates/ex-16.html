@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>チャットアプリ</h3>
+    <form th:action="@{/ex16/post}" method="post">
+        名前:<input type="text" name="name"><br>
+        コメント:<textarea name="comment" rows="3" cols="50"></textarea><br>
+        <button>送信</button>
+    </form>
+
+    <div th:each="user :${application.list}">
+        <hr>
+        <span th:text="${user.name}">名前</span>
+        <span th:text="${user.comment}">コメント</span>
+    </div>
+</body>
+</html>
