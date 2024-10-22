@@ -1,4 +1,4 @@
-package com.example.demo.conroller;
+package com.example.demo.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,9 +20,8 @@ public class Ex6Controller {
     public String index() {
         
         if (servletContext.getAttribute("list") == null){
-            List<Ex_16> list = new ArrayList<>();
+            List<Ex_16> list = new ArrayList<Ex_16>();
             servletContext.setAttribute("list", list);
-            System.out.println("IF文処理");
         }
         return "ex-16";
         }

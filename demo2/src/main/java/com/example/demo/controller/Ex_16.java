@@ -1,4 +1,4 @@
-package com.example.demo.conroller;
+package com.example.demo.controller;
 
 public class Ex_16 {
 
